@@ -29,6 +29,48 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+    .description {
+        font-size: 15px;
+        text-align: left;
+    }
+    .ptitle {
+        font-size: 30px;
+        /*text-align: left;*/
+    }
+    br {
+        font-size: 2px;
+    }
+    #row1, #row2, #row3, #row4{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .content-section2 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .content-section3 {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+    .content-section4 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #copyright {
+        font-size: 15px;
+    }
+
+
+
+    </style>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -56,7 +98,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -77,7 +119,6 @@
                         <!-- <h1 class="brand-heading">Haesol Lee</h1> -->
                         <p class="intro-text">Without creativity, technology would have not come this far.</p>
 
- <!--                        <p class="intro-text">Full-Stack Web Developer | Industrial Engineer | Boxless/Out of the Box Thinker | Creative Craver | Everyday Problem Solver | Open Minded Leader/Follower | Forever Gamer | Electronic Dance Music Enthusiast</p> -->
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -87,8 +128,10 @@
         </div>
     </header>
 
+
+
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container content-section text-center content-section2">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About</h2>
@@ -118,20 +161,22 @@
         </div>
     </section> -->
 
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <section id="portfolio" class="content-section text-center content-section3">
+        <div class="portfolio-section">
             <div class="container">
+        <h2>Portfolio</h2>
+
         <!-- Project One -->
-        <div class="row">
+        <div class="row" id="row1">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="img/MusicVisualizer.png" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Music Visualizer</h3>
-                <p>• Load, play, and visualize your favorite music through this colorful app <br>
-                • Features: Uses Web Audio API to convert music’s frequency to a data set that is rendered into D3 charts to visualize your music. Four different visualizer modes and two color themes is available <br>
+                <h3 class="ptitle">Music Visualizer</h3>
+                <p class="description">• Load, play, and visualize your favorite music through this colorful app <br>
+                • Features: Uses Web Audio API to convert music’s frequency to a data set that is rendered into D3 charts to visualize your music. <br>
                 • Technologies Used: Web Audio API, D3.js, UI Bootstrap, MongoDB, ExpressJS, NodeJS, AngularJS, JavaScript, jQuery, JSON, HTML5, CSS3, Twitter Bootstrap, Heroku, mLab, Trello, Github, Sublime Text 3</p>
                 <a class="btn btn-primary" href="https://music-visualizer.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://github.com/HAESOL87/Music-Visualizer" target="_blank">Github <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -142,15 +187,15 @@
         <hr>
 
         <!-- Project Two -->
-        <div class="row">
+        <div class="row" id="row2">
 <!--             <div class="col-md-7">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">
                 </a>
             </div> -->
             <div class="col-md-5">
-                <h3>Krave</h3>
-                <p>• Search, create, and save the perfect place that will satisfy your craving <br>
+                <h3 class="ptitle">Krave</h3>
+                <p class="description">• Search, create, and save the perfect place that will satisfy your craving <br>
                 • Features: Google Maps & Places API used to inquiry users’ craving <br>
                 • Technologies Used: Google Maps API, Google Places API, MongoDB, ExpressJS, NodeJS, JavaScript, jQuery, JSON, HTML5, CSS3, Twitter Bootstrap, Heroku, mLab, Trello, Balsamiq, Github, Sublime Text 3</p>
                 <a class="btn btn-primary" href="https://krave.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -159,7 +204,7 @@
 
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x200" alt="">
+                    <img class="img-responsive" src="img/Krave.png" alt="">
                 </a>
             </div>
         </div>
@@ -168,15 +213,15 @@
         <hr>
 
         <!-- Project Three -->
-        <div class="row">
+        <div class="row" id="row3">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="img/ExpenseShare.png" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Expense Share</h3>
-                <p>• Calculate expenses among friends and family for any occasions <br>
+                <h3 class="ptitle">Expense Share</h3>
+                <p class="description">• Calculate expenses among friends and family for any occasions <br>
                 • Technologies Used: Ruby on Rails, PostgreSQL, JavaScript, jQuery, HTML5, CSS3, Twitter Bootstrap, Bootstrap Generators, Sass, Heroku, Trello, Wireframe, Sublime Text 3</p>
                 <a class="btn btn-primary" href="https://expenseshare.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://github.com/HAESOL87/Expense-Share" target="_blank">Github <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -187,7 +232,7 @@
         <hr>
 
         <!-- Project Four -->
-        <div class="row">
+        <div class="row" id="row4">
 
   <!--           <div class="col-md-7">
                 <a href="#">
@@ -196,16 +241,16 @@
             </div> -->
 
             <div class="col-md-5">
-                <h3>Tic Tac Toe</h3>
-                <p>• Tic Tac Toe game with Two player and AI mode <br>
-                   • Technologies Used: HTML5, CSS3, JavaScript, jQuery, Sublime Text 3</p>
+                <h3 class="ptitle">Tic Tac Toe</h3>
+                <p class="description">• Tic Tac Toe game with Two player and AI mode <br>
+                   • Technologies Used: HTML5, CSS3, JavaScript, jQuery, Trello, Wireframe, Sublime Text 3</p>
                 <a class="btn btn-primary" href="https://haesol87.github.io/TIC.TAC.TOE./" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://github.com/HAESOL87/TIC.TAC.TOE." target="_blank">Github <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="img/TicTacToe.png" alt="">
                 </a>
             </div>
 
@@ -218,12 +263,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container content-section text-center content-section4">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
                 <p>Feel free to contact me at <a href="mailto:haesol87@gmail.com"><!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->haesol87@gmail.com</a></p>
                 <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://resume.creddle.io/resume/cik40gdasfa" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-file" aria-hidden="true"></i> <span class="network-name">Resume</span></a>
+                    </li>
+
                     <li>
                         <a href="https://github.com/haesol87" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> <span class="network-name">Github</span></a>
                     </li>
@@ -232,13 +281,13 @@
                         <a href="https://linkedin.com/in/haesollee" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <span class="network-name">Linkedin</span></a>
                     </li>
 
-                    <li>
+<!--                     <li>
                         <a href="mailto:haesol87@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="network-name">Email</span></a>
                     </li>
 
                     <li>
                         <a href="https://resume.creddle.io/resume/cik40gdasfa" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-file" aria-hidden="true"></i> <span class="network-name">Resume</span></a>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>
@@ -251,7 +300,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Haesol Lee</p>
+            <p id = "copyright">Copyright &copy; Haesol Lee</p>
         </div>
     </footer>
 
