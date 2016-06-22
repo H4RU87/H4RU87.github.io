@@ -54,7 +54,8 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    /*color: #1d9b6c;*/
+    color: #3377ff;
 }
 
 .light {
@@ -147,7 +148,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/Creativity4.jpg) no-repeat bottom center scroll;
+    background: url(../img/Creativity_Final.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -322,10 +323,10 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #6699FF;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #6699FF;
 }
 
 ul.banner-social-buttons {
